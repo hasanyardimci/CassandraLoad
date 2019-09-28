@@ -6,7 +6,6 @@ from cassandra.auth import PlainTextAuthProvider
 
 
 class CassandraSchema:
-
     def __init__(self):
         self.cluster = None
         self.session = None
@@ -20,9 +19,6 @@ class CassandraSchema:
         ap = PlainTextAuthProvider(username='cassandra', password='cassandra')
         self.cluster = Cluster(['127.0.0.1'], port=9042, auth_provider=ap)
         self.session = self.cluster.connect(self.keyspace)
-        return self.session
-
-    def getsession(self):
         return self.session
 
     # Create Keyspace based on Given Name
