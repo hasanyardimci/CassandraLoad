@@ -4,6 +4,11 @@ from cassandra.cluster import Cluster, BatchStatement
 from cassandra.query import SimpleStatement
 from cassandra.auth import PlainTextAuthProvider
 
+##############################
+###########HASAN##############
+##############################
+##############################
+
 
 class CassandraSchema:
     def __init__(self):
